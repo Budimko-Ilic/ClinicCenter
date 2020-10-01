@@ -1,0 +1,62 @@
+﻿
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/MedicalExaminationOnDiscount.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <br><br>
+
+        <div class="container-fluid">
+
+            <div class="card bg-info text-white">
+                
+                <form method="post">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3 class="panel-title">Ocenite klinike</h3>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Izaberite ocenu od 1-5: </label>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <select id="clinicMark" name="clinicMark">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5" selected>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success" type="submit">Ostavite ocenu</button>
+                        <a href="/" role="button" class="btn btn-primary" type="submit" style="float:right">Odustani</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

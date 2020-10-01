@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/defaultTemplate.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <div class="container-fluid">
+
+            <div class="card bg-info text-white">
+                <div class="card-header">
+                    <h3 class="panel-title">Login</h3>
+                </div>
+                <form method="post">
+                    <div class="card-body">
+
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email: </label>
+                                    <input id="email" type="email" name="Email" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="password">Password: </label>
+                                    <input id="password" type="password" name="Password" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success" type="submit">Login</button>
+                        <a href="/" role="button" class="btn btn-primary" type="submit" style="float:right">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

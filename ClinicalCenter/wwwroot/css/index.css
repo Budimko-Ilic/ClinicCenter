@@ -1,0 +1,31 @@
+﻿
+.container {
+    max-width: 70%;
+    margin: auto;
+    background-size: 100%;
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+a:link, a:visited {
+    background-color: forestgreen;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: blue;
+}

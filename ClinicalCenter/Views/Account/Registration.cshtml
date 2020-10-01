@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/defaultTemplate.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="container">
+        <br><br>
+        <div class="container-fluid">
+
+            <div class="card bg-info text-white">
+                <div class="card-header">
+                    <h3 class="panel-title">Registration</h3>
+                </div>
+                <form method="post">
+                    <div class="card-body">
+
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email: </label>
+                                    <input id="email" type="email" name="Email" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="password">Password: </label>
+                                    <input id="password" type="password" name="Password" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">Name: </label>
+                                    <input id="name" type="text" name="FirstName" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="surname">Last Name: </label>
+                                    <input id="surname" type="text" name="LastName" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number: </label>
+                                    <input id="phoneNumber" type="text" name="PhoneNumber" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="city">City: </label>
+                                    <input id="city" type="text" name="City" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success" type="submit">Registration</button>
+                        <a href="/" role="button" class="btn btn-primary" type="submit" style="float:right">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

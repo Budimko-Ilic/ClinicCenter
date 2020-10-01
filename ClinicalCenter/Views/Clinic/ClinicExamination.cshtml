@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ClinicalCenter.Entities.ViewModels.ClinicExaminationViewModel>
+@using Microsoft.AspNetCore.Http
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/MedicalExaminationOnDiscount.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link" style="background-color: lightblue" href="https://localhost:44389/ClinicPage/@Context.Session.GetString("Id")">Profil Klinke</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="https://localhost:44389/ClinicExamination/@Context.Session.GetString("Id")">Spisak specijalizovanih pregleda </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="background-color: lightblue" href="https://localhost:44389/MedicalStaff/@Context.Session.GetString("Id")">Spisak zdravstvenih radnika </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="background-color: lightblue" href="https://localhost:44389/MedicalExaminationOnDiscount/@Context.Session.GetString("Id")">Prgledi na popustu </a>
+        </li>
+
+    </ul>
+    <div class="container">
+        <br><br>
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th style="width:25%">Naziv</th>
+                    <th style="width:50%">Opis</th>
+                    <th style="width:15%">Cena</th>
+                    <th style="width:10%">Zakaži pregled</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NameOfMedicalExamination)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price), din
+                        </td>
+
+
+                        <td>
+                            <a href="https://localhost:44389/CreateMedicalExaminition/@Html.DisplayFor(modelItem => item.Id)">
+                                <input type="submit" value="Zakaži pregled">
+                            </a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿@model ClinicalCenter.Entities.ViewModels.UserInfoViewModel;
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/user.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link active" href="https://localhost:44389/UserPage">Profil</a>
+        </li>
+        <li class="nav-item" style="background-color: lightblue">
+            <a class="nav-link" href="https://localhost:44389/HealthCard">Zdravstveni karton </a>
+        </li>
+        <li class="nav-item" style="background-color: lightblue">
+            <a class="nav-link" href="https://localhost:44389/ActiveMedicalExamination">Zakazani pregledi </a>
+        </li>
+        <li class="nav-item" style="background-color: lightblue">
+            <a class="nav-link " href="https://localhost:44389/ListOfClinics">Lista klinika u sistemu </a>
+        </li>
+    </ul>
+    <div class="container">
+        <br><br>
+        <div class="container-fluid">
+
+            <div class="card bg-info text-white">
+                <div class="card-header">
+                    <h3 class="panel-title">Podaci korisnika @Html.DisplayFor(modelItem => Model.FirstName)</h3>
+                </div>
+
+                <div class="card-body">
+                    
+                    <div class="row justify-content-md-center ">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Ime: </label>
+                                <input id="name" type="text" name="FirstName" value="@Html.DisplayFor(modelItem => Model.FirstName)" class="form-control" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center ">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="LastName">Prezime: </label>
+                                <input id="LastName" type="text" name="LastName" value="@Html.DisplayFor(modelItem => Model.LastName)" class="form-control" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="post">
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email: </label>
+                                    <input id="email" type="email" name="Email" value="@Html.DisplayFor(modelItem => Model.Email)" class="form-control" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <h3 class="panel-title">Promeni podatke</h3>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="PhoneNumber">Phone Number: </label>
+                                    <input id="phoneNumber" type="text" name="PhoneNumber" value="@Html.DisplayFor(modelItem => Model.PhoneNumber)" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="City">City: </label>
+                                    <input id="city" type="text" name="City" value="@Html.DisplayFor(modelItem => Model.City)" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-success" type="submit">Promeni podatke</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

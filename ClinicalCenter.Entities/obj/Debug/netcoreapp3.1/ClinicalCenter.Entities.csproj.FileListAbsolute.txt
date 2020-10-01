@@ -1,0 +1,9 @@
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\bin\Debug\netcoreapp3.1\ClinicalCenter.Entities.deps.json
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\bin\Debug\netcoreapp3.1\ClinicalCenter.Entities.dll
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\obj\Debug\netcoreapp3.1\ClinicalCenter.Entities.csprojAssemblyReference.cache
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\obj\Debug\netcoreapp3.1\ClinicalCenter.Entities.AssemblyInfoInputs.cache
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\obj\Debug\netcoreapp3.1\ClinicalCenter.Entities.AssemblyInfo.cs
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\bin\Debug\netcoreapp3.1\ClinicalCenter.Entities.pdb
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\obj\Debug\netcoreapp3.1\ClinicalCenter.Entities.csproj.CoreCompileInputs.cache
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\obj\Debug\netcoreapp3.1\ClinicalCenter.Entities.dll
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Entities\obj\Debug\netcoreapp3.1\ClinicalCenter.Entities.pdb

@@ -1,0 +1,12 @@
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\bin\Debug\netcoreapp3.1\ClinicalCenter.Contracts.deps.json
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\bin\Debug\netcoreapp3.1\ClinicalCenter.Contracts.dll
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\bin\Debug\netcoreapp3.1\ClinicalCenter.Contracts.pdb
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\bin\Debug\netcoreapp3.1\ClinicalCenter.Entities.dll
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\bin\Debug\netcoreapp3.1\ClinicalCenter.Entities.pdb
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\obj\Debug\netcoreapp3.1\ClinicalCenter.Contracts.csprojAssemblyReference.cache
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\obj\Debug\netcoreapp3.1\ClinicalCenter.Contracts.AssemblyInfoInputs.cache
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\obj\Debug\netcoreapp3.1\ClinicalCenter.Contracts.AssemblyInfo.cs
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\obj\Debug\netcoreapp3.1\ClinicalCenter.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\obj\Debug\netcoreapp3.1\ClinicalCenter.Contracts.csproj.CopyComplete
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\obj\Debug\netcoreapp3.1\ClinicalCenter.Contracts.dll
+C:\Users\MB\Desktop\ClinicalCenter\ClinicalCenter\ClinicalCenter.Contracts\obj\Debug\netcoreapp3.1\ClinicalCenter.Contracts.pdb

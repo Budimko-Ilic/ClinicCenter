@@ -1,0 +1,73 @@
+﻿@model Tuple<List<ClinicalCenter.Entities.ViewModels.MedicalExaminationForUserViewModel>>
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/MedicalExaminationOnDiscount.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link " style="background-color: lightblue" href="https://localhost:44389/UserPage">Profil</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="https://localhost:44389/HealthCard">Zdravstveni karton </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="background-color: lightblue" href="https://localhost:44389/ActiveMedicalExamination">Istorija pregleda </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " style="background-color: lightblue" href="https://localhost:44389/ListOfClinics">Lista klinika u sistemu </a>
+        </li>
+    </ul>
+    <div class="container">
+        <br><br>
+
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th style="width:25%">Naziv klinike</th>
+                    <th style="width:40%">Izvršeni pregled</th>
+                    <th style="width:10%">Doktor</th>
+                    <th style="width:15%">Cena pregleda</th>
+                    <th style="width:10%">Oceni pregled</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Item1)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ClinicName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ExaminitionName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price), din
+                    </td>
+                    <td>
+                        dr.  @Html.DisplayFor(modelItem => item.FirstName)  @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        <a href="https://localhost:44389/MarkExamination/@Html.DisplayFor(modelItem => item.Id)">
+                            <input type="submit" value="Oceni pregled">
+                        </a>
+                    </td>
+
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

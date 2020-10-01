@@ -1,0 +1,75 @@
+﻿@model ClinicalCenter.Entities.Models.Clinic;
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/user.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link active"  href="https://localhost:44389/ClinicPage/@Html.DisplayFor(modelItem => Model.Id)">Profil Klinke</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="background-color: lightblue" href="https://localhost:44389/ClinicExamination/@Html.DisplayFor(modelItem => Model.Id)">Spisak specijalizovanih pregleda </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="background-color: lightblue" href="https://localhost:44389/MedicalStaff/@Html.DisplayFor(modelItem => Model.Id)">Spisak zdravstvenih radnika </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="background-color: lightblue" href="https://localhost:44389/MedicalExaminationOnDiscount/@Html.DisplayFor(modelItem => Model.Id)">Prgledi na popustu </a>
+        </li>
+
+    </ul>
+    <div class="container">
+        <br><br>
+        <div class="container-fluid">
+
+            <div class="card bg-info text-white">
+                <div class="card-header">
+                    <h3 class="panel-title">Podaci Klinike @Html.DisplayFor(modelItem => Model.Name)</h3>
+                </div>
+
+                <div class="card-body">
+                    <div class="row justify-content-md-center ">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Description">O nama: </label>
+                                <textarea id="Description" name="Description" style="height:300px"  class=" form-control" readonly>@Html.DisplayFor(modelItem => Model.Description)</textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center ">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="City">Grad: </label>
+                                <input id="City" type="text" name="City" value="@Html.DisplayFor(modelItem => Model.City)" class="form-control" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center ">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Adress">Adresa: </label>
+                                <input id="Adress" type="text" name="Adress" value="@Html.DisplayFor(modelItem => Model.Adress)" class="form-control" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

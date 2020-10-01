@@ -1,0 +1,58 @@
+﻿@model ClinicalCenter.Entities.Models.TypeOfMedicalExamination;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/clinic.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <br><br>
+        <div class="container-fluid">
+
+            <div class="card bg-info text-white">
+                <div class="card-header">
+                    <h3 class="panel-title">Zakaži pregled:</h3>
+
+                </div>
+                <form method="post" action="">
+                    <div class="card-body">
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <h4>U slucaju da ne bude slobodnih termina tog dana, bićete ubačeni u prvom sledećem</h4>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Name">Specijalizovani pregled: </label>
+                                    <input id="Name" type="text" name="Name" value="@Html.DisplayFor(modelItem => Model.Type)" class="form-control" readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-md-center ">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="date">Izaberite dan održavanja pregleda : </label>
+                                    <input type="datetime-local" id="date" name="date" min="2020-10-01"><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success" type="submit">Zakaži pregled</button>
+                        <a href="/" role="button" class="btn btn-primary" type="submit" style="float:right">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
